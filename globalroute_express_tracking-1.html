@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GlobalRoute Express — Shipment Tracking</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f6f8;color:#20252b;font-family:Arial,Helvetica,sans-serif}
+.header{background:#fff;border-bottom:1px solid #dfe3e7;padding:16px 7%;display:flex;align-items:center;gap:12px}
+.logo{width:42px;height:42px;border-radius:8px;background:#173b67;color:#fff;display:grid;place-items:center;font-weight:800;font-size:19px}
+.brand{font-size:21px;font-weight:800}.tag{font-size:12px;color:#69737d}
+.wrap{max-width:920px;margin:34px auto;padding:0 18px}
+.card{background:#fff;border:1px solid #dfe3e7;border-radius:12px;box-shadow:0 3px 14px #0000000c;padding:30px}
+h1{margin:0 0 7px;font-size:29px}.ref{color:#68737e;margin-bottom:22px}
+.status{display:inline-block;padding:9px 15px;border-radius:20px;background:#fff2d1;color:#735700;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:26px 0}
+.item{background:#f7f8fa;border-radius:8px;padding:16px}.label{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:#707a84}.value{margin-top:6px;font-weight:700}
+h2{font-size:20px;margin-top:30px}.timeline{border-left:3px solid #c9ced3;margin:22px 0 8px 9px;padding-left:27px}
+.event{position:relative;margin-bottom:28px}.event:before{content:"";position:absolute;left:-36px;top:2px;width:13px;height:13px;border-radius:50%;background:#fff;border:3px solid #777}
+.event.current:before{background:#173b67;border-color:#173b67}.event h3{margin:0 0 5px;font-size:16px}.event p{margin:0;color:#69737d;font-size:14px}
+.footer{text-align:center;color:#7b858e;font-size:12px;margin:18px}
+@media(max-width:620px){.grid{grid-template-columns:1fr}.card{padding:21px}}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="logo">GR</div>
+  <div><div class="brand">GlobalRoute Express</div><div class="tag">International Logistics</div></div>
+</header>
+
+<main class="wrap">
+<section class="card">
+<h1>Shipment Tracking</h1>
+<div class="ref">Tracking number: <strong>794628156032</strong></div>
+<span class="status">Awaiting Transit</span>
+
+<div class="grid">
+<div class="item"><div class="label">Tracking Number</div><div class="value">794628156032</div></div>
+<div class="item"><div class="label">Package Weight</div><div class="value">10 kg</div></div>
+<div class="item"><div class="label">Origin</div><div class="value">Tokyo, Japan</div></div>
+<div class="item"><div class="label">Destination</div><div class="value">Osaka, Japan</div></div>
+<div class="item"><div class="label">Shipment Status</div><div class="value">Awaiting Transit</div></div>
+<div class="item"><div class="label">Service</div><div class="value">International Priority</div></div>
+</div>
+
+<h2>Tracking History</h2>
+<div class="timeline">
+<div class="event current"><h3>Awaiting Transit</h3><p>Shipment is prepared and waiting to enter transit.</p></div>
+<div class="event"><h3>Shipment Received</h3><p>Shipment information has been registered.</p></div>
+<div class="event"><h3>In Transit</h3><p>Pending departure from the origin facility.</p></div>
+<div class="event"><h3>Destination Facility</h3><p>Pending arrival in Osaka, Japan.</p></div>
+<div class="event"><h3>Delivered</h3><p>Pending final delivery.</p></div>
+</div>
+</section>
+<div class="footer">© 2026 GlobalRoute Express</div>
+</main>
+</body>
+</html>
